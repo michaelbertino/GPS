@@ -40,13 +40,24 @@ while True:
             print('# of Satellites in View:', my_gps.satellites_in_view)
             data_valid = my_gps.satellite_data_updated()
             
+            
+            file = open('GPS_Log.txt', 'ab')
+            
+            
+            file.write('Latitude: ')
+            file.write(my_gps.latitude_string())
+            file.write(' , \n')
+            file.write('Longitude: ')
+            file.write(my_gps.longitude_string())
+            file.write(' , \n')
+            file.write( my_gps.speed_string('knot'))
+            file.write(' , \n')
+            file.flush()
+            
 
             stat = None
             sentence_count += 1
 
-
-            file = open('GPS_Log.txt', 'w')
-            file.write('Latitude:{0} Longitude:{1} \n' .format(my_gps.latitude_string(),my_gps.longitude_string()))
 
 
     if sentence_count == 100:
