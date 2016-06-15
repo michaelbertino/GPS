@@ -209,3 +209,12 @@ Beyond the pyBoard, micropyGPS should run on other embedded platforms that have 
 [pyboard]:http://docs.micropython.org/en/latest/quickref.html
 [MTK_command]:https://github.com/inmcm/MTK_commands
 [Ultimate GPS Breakout]:http://www.adafruit.com/product/746
+
+## GP-20U7 Platform
+
+One such example of other GPS platforms is the GP-20U7 receiver. Pyboard hookup with GPS receiver: [GP-20U7] from sparkfun. There is only need for three connections: power, grnd and Rx(UART). 
+
+
+![GP-20U7 platform] (https://cloud.githubusercontent.com/assets/11164479/16093520/0ce9f30a-32f1-11e6-9c07-631ff460852b.JPG)
+
+[GP-20U7]: https://www.sparkfun.com/products/13740
